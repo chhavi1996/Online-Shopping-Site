@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Shopping Site</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script type="text/javascript" src="myscript.js"></script>
+</head>
+<body onload="startTimer()">
+<div id="top">
+	<CENTER><img id="coverimg" src="cover2.jpg"/></CENTER>
+</div>
+
+<ul class="navbar">
+<li><a href="index.html">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#men">Men</a></li>
+<li class="women_acc">
+	<a href="#women" class="dropbtn">Women</a>
+	<div class="women_shop">
+	<a href="women.html">Indian & Fusion Wear</a>
+	<a href="#">Western Wear</a>
+	<a href="#">Lingerie & Sleepwear</a>
+	<a href="#">Footwear</a>
+	<a href="#">Sports & Active Wear</a>
+	<a href="#">Handbags,Bags & Wallets</a>
+	<a href="#">Fashion Accessories</a>
+	<a href="#">Jewellery</a>
+	<a href="#">Watches & Wearables</a>
+	<a href="#">Sunglasses and Frames</a>
+	</div>
+</li>
+<li><a href="#kids">Kids</a></li>
+<li><a href="#homedecor">Home Decor</a></li>
+</ul><br><br>
+
+
+<div id="smallpic">
+<button class="smallbtn" onclick="document.getElementById('bigimg').src='13.jpg'" ><img src="13.jpg" width="70px" height="90px"></button>
+<button class="smallbtn" onclick="document.getElementById('bigimg').src='14.jpg'"><img src="14.jpg" width="70px" height="90px"></button>
+<button class="smallbtn" onclick="document.getElementById('bigimg').src='15.jpg'"><img src="15.jpg" width="70px" height="90px"></button>
+</div>
+<img src="13.jpg" id="bigimg" width="38%" height="45%" style="border:1px solid lightgrey;margin-left:-2px;margin-top:50px" />
+
+
+<div id="desc_dress">
+	<form action="/buy" method="post">
+	<p style="color:grey;font-family:sans-serif"><strong>Belle Fille Black Bodycon Dress</strong></p>
+	<input type="hidden" name="dressname" value="Belle Fille Black Bodycon Dress"/>
+	<p><span style="text-decoration:line-through;color:grey">Rs.1399</span><span style="color:red">(60% Off)</span></p>
+	<p>Rs.559</p>
+	<input type="hidden" name="dressprice" value="559"/>
+	<br><br><br><hr style="border-bottom:1px dotted">
+	<p><b>Select Size</b></p>
+	<input type="radio" name="size" value="S">S
+	<input type="radio" name="size" value="M">M
+	<input type="radio" name="size" value="L">L
+	<input type="radio" name="size" value="XL">XL
+	<input type="radio" name="size" value="XXL">XXL
+	<br><br><br><br><br>
+	<strong>Qty</strong>
+	<select required="required" name="qty">
+		<option>Select</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+	</select><br><br>
+	<hr style="border-bottom:1px dotted"><br><br><br><br>
+
+	<input type="submit" name="buy" value="BUY NOW" class="button">
+	<input type="button" class="button" value="ADD TO CART"/>
+	</form>
+</div>
+
+
+</body>
+</html>
